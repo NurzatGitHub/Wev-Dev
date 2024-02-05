@@ -1,0 +1,113 @@
+.text {
+    margin-left: 17%;
+    width: 35%;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.text-box {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 375px;
+    height: 325px;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.facebook_img {
+    width: 330px;
+    margin-top: 160px;
+    margin-left: 15%;
+}
+
+.text-box p {
+    font-size: 20px;
+    color: #999;
+}
+
+input {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 13px;
+    font-size: 17px;
+    border-radius: 7px;
+    border-color:#ccc;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+input:focus {
+    border-color: aqua;
+    outline: none;
+}
+
+.entrance{
+    width: 95%;
+    box-sizing: border-box;
+    background-color: #2B8CEE;
+    border-color: #2B8CEE;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.first-link {
+    text-decoration: none;
+    color: #2B8CEE;
+    margin-left: 130px;
+    margin-right: 130px;
+    border-bottom: 1px solid transparent; 
+    transition: border-bottom 0.3s ease;
+    font-size: 16px;
+    font-style: initial;
+}
+
+.first-link:hover {
+    border-bottom: 1px solid #2B8CEE;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 18px;
+}
+
+.new-account {
+    width: 60%;
+    box-sizing: border-box;
+    background-color:#39D417;
+    border-color: #39D417;
+    padding: 13px;
+    border-radius: 8px;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+}
+
+.second-link {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline;
+}
+
+.second-link:hover {
+    border-bottom: 1px solid black;
+}
