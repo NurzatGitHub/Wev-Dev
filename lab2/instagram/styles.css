@@ -1,0 +1,185 @@
+.mine-image{
+    position: relative;
+}
+
+.second-image{
+    position: absolute;
+    top: 4%;
+    left: 33.5%;
+    z-index: 1;
+}
+
+.content {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    margin: 20px;
+}
+
+.text-box {
+    border: 2px solid #ccc;
+    border-color:#ccc;
+    padding: 10px;
+    width: 320px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 3%;
+    right: 26%;
+    text-align: center;
+}
+
+.image-box {
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1.5%;
+    left: 20%;
+}
+
+.input-1 {
+    width: 85%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 11px;
+    border-color:none;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+.input-2 {
+    width: 85%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 11px;
+    border-color:none;
+    border-radius: 3px;
+    margin-top: 8px;
+}
+input:focus{
+    border-color: #ccc;
+    outline: none;
+}
+
+.log-in{
+    width: 85%;
+    box-sizing: border-box;
+    background-color: #81b6ec;
+    border-color: #81b6ec;
+    border-radius: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: aliceblue;
+    transition: background-color 0.3s ease;
+}
+
+.log-in:hover {
+    background-color: royalblue;
+    border-color: royalblue;
+}
+
+.horizontal-line {
+    display: flex;
+    align-items: center;
+}
+
+.horizontal-line hr {
+    flex: 1;
+    border: none;
+    height: 1px;
+    background-color: #999;
+    margin: 0 25px;
+}
+
+.horizontal-line span {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #898888;
+}
+
+.image-and-link {
+    display: flex;
+    align-items: center; 
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.image-and-link img {
+    max-width: 20px; 
+    height: auto; 
+    margin-left: 40px;
+}
+
+.link-1{
+    text-decoration: none;
+}
+.link-2{
+    color: #232b33;
+    font-size: 14px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.text-box-2 {
+    border: 2px solid #ccc;
+    border-color:#ccc;
+    padding: 10px;
+    width: 320px;
+    height: 50px;
+    position: absolute;
+    top: 63%;
+    right: 26%;
+    text-align: center;
+    display: inline-block;
+}
+
+p{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.link-3{
+    text-decoration: none;
+    color: rgb(48, 48, 244);
+    font-weight: bolder;
+}
+
+.text-box-3{
+    border: none;
+    border-color:#ccc;
+    padding: 10px;
+    width: 320px;
+    height: 50px;
+    position: absolute;
+    top: 72%;
+    right: 26%;
+    display: inline-block;
+}
+
+h4{
+    margin-top: 10px;
+    margin-left: 120px;
+    font-style: italic;
+    font-weight: 100;
+}
+.get-app-1{
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+    margin-left: 35px;
+}
+.get-app-2{
+    width: 120px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.links{
+    display: flex;
+    text-align: center;
+}
