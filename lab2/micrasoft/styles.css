@@ -1,0 +1,180 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.top-box{
+    display: flex;
+    height: 54px;
+    padding: 5px 0;
+}
+
+.left-menu{
+    margin-left: 70px;
+    margin-top: 4px;
+}
+
+.left-navigation{
+    display: flex;
+    margin-left: 90px;
+}
+
+.left-navigation li{
+    padding: 0 10px;
+    margin-top: -43px;
+}
+
+.left-navigation li a{
+    padding-bottom: 2px;
+    text-decoration: none;
+    color: #262626;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.left-navigation li a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.left-menu img{
+    width: 108px;
+}
+
+#search-icon{
+    width: 36px;
+}
+
+#login-icon{
+    width: 36px;
+}
+
+.right-navigation li button{
+    background-color: white;
+    border: white;
+    padding-bottom: 2px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.right-navigation li button image{
+    vertical-align: middle;
+    margin-left: 50px;
+}
+
+.right-navigation li select{
+    background-color: white;
+    border: white;
+    padding-bottom: 2px;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+    color: #262626;
+}
+
+.right-navigation li select:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.right-navigation li button:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.right-navigation li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.right-menu{
+    margin-left: 500px;
+    margin-top: -34px;
+}
+
+#main-image{
+    width: 1510px;
+    margin-top: -10px;
+}
+
+.about{
+    position: absolute;
+    top: 165px;
+    left: 105px;
+    color: white;
+}
+
+.about h2{
+    font-size: 35px;
+}
+
+.about p{
+    margin-top: -8px;
+    font-size: 17px;
+    width: 400px;
+}
+
+.about button{
+    margin-top: 16px;
+    background-color: #0067b8;
+    color: white;
+    border: #0067b8;
+    width: 217.58px;
+    height: 39.2px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.bottom-box{
+    margin-top: 70px;
+    margin-left: 70px;
+}
+
+.images{
+    width: 320px;
+}
+
+.title{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.link{
+    text-decoration: none;
+    color: #0067b8;
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.link:hover{
+    border-bottom: 2px solid #0067b8;
+}
+
+.about-app{
+    margin-top: -8px;
+}
+
+.first-block{
+    width: 320px;
+}
+
+.second-block{
+    margin-left: 30px;
+    width: 320px;
+}
+
+.third-block{
+    margin-left: 30px;
+    width: 320px;
+}
+
+.fouth-block{
+    margin-left: 30px;
+    width: 320px;
+}
+
+.bottom-box{
+    display: flex;
+    padding-bottom: 50px;
+}
