@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poopins',sans-serif;
+    box-sizing: border-box;    
+}
+
+/* .conteiner{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#f4);
+    padding: 10px;
+} */
+
+.heading{
+    background-color: black;
+    color: #f4f0f0;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.todo-list{
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-list h1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-task{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+input{
+    border-radius: 5px;
+    width: 500px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+button{
+    color: #fff;
+    background-color: rgb(57, 57, 112);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 5px;
+    /* user-select: none; */
+    cursor: pointer;
+    position: relative;
+    border: 1px solid gray;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+.red-color{
+    color: red;
+}
+
+.btn-link{
+    background-color: white;
+    border: none;
+    float: right;
+    margin-left: 50px;
+}
