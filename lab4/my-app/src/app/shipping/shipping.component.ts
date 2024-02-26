@@ -8,11 +8,12 @@ import { CartService } from '../cart.service';
   styleUrls: ['./shipping.component.css']
 })
 export class ShippingComponent implements OnInit {
-  shippingCosts!: Observable<{ type: String; price: Number; }[]>; // Используем примитивные типы string и number
+
+  shippingCosts!: Observable<{ type: String, price: Number }[]>;
 
   constructor(private cartService: CartService) {}
 
   ngOnInit(): void {
-    this.shippingCosts = this.cartService.getShippingPrices();
+    this.shippingCosts =  this.cartService.getShippingPrices();
   }
 }

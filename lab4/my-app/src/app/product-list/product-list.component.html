@@ -1,26 +1,22 @@
 <h2>Products</h2>
 
-<div *ngFor = "let product of products">
-    <h3>
-        <a [title]="product.name + 'details'"
-        [routerLink]="['/products',product.id]">
-            {{product.name}}
-        </a>
-    </h3>
+<div class="listItems">
+    <div class="items" *ngFor="let product of products">
+        <h3> 
+            <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]"> 
+                <img [src]="product.landingImage"> 
+                {{ product.name }}
+            </a> 
+        </h3>
+        <h3> Rating: {{ product.rating }}</h3>
+        <p class="description" *ngIf="product.description"> Description: {{product.description}}</p>
+        <h2>{{ product.price }} тг.</h2>
+        
+        <button type="button" id="tgButton" (click)="shareTg(product.urlKaspi)"></button>
+        <button type="button" id="waButton" (click)="shareWa(product.urlKaspi)"></button>
 
-    <p *ngIf="product.description">
-        Description: {{product.description}}
-    </p>
-
-    <button type="button" (click)="share()">
-        Share
-    </button>
-
-    <app-product-alerts
-        [product]="product"
-        (notify)="onNotify()">
-    </app-product-alerts>
-    
+        <app-product-alerts [product]="product" (notify)="onNotify()"> </app-product-alerts>
+    </div>
 </div>
 
 <!-- 

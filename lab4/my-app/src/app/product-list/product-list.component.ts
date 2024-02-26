@@ -10,16 +10,18 @@ import { products } from '../products';
 export class ProductListComponent {
   products = [...products];
 
-  share() {
-    window.alert('The product has been shared!');
+  shareTg(urlKaspi: string) {
+    window.location.href = `https://t.me/share/url?url=${encodeURIComponent(urlKaspi)}`;
+  }
+
+  shareWa(urlKaspi: string) {
+    window.location.href = `whatsapp://send?text=${encodeURIComponent(urlKaspi)}`;
   }
 
   onNotify() {
-    window.alert('You will be notified when the product goes on sale');
+    window.alert('Wou will be notidied when the product goes on sale')
   }
 }
-
-
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
