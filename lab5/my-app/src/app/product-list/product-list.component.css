@@ -1,0 +1,58 @@
+.listItems {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.items {
+    width: 25%; 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 6px;
+}
+
+.items h3 {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.items img{
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.items .description {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.items button {
+    height: 38px;
+    width: 38px;
+}
+
+#tgButton {
+    background-color: white;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/800px-Telegram_2019_Logo.svg.png");
+    background-size: cover;
+}
+
+#waButton {
+    background-image: url("https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN");
+    background-size: cover;
+}
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
