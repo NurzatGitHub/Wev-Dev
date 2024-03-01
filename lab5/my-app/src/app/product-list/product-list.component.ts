@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
 import { products } from '../products';
 
 @Component({
@@ -7,19 +7,22 @@ import { products } from '../products';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
+  @Input() categoryId: any;
+
   products = [...products];
+  categoryIdFromRoute: any;
 
-  shareTg(urlKaspi: string) {
-    window.location.href = `https://t.me/share/url?url=${encodeURIComponent(urlKaspi)}`;
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      this.categoryIdFromRoute = Number(params.get('categoryId'));
+    });
   }
 
-  shareWa(urlKaspi: string) {
-    window.location.href = `whatsapp://send?text=${encodeURIComponent(urlKaspi)}`;
-  }
-
-  onNotify() {
-    window.alert('Wou will be notidied when the product goes on sale')
+  removeProduct(product: any) {
+    this.products = this.products.filter(p => p !== product);
   }
 }
 /*

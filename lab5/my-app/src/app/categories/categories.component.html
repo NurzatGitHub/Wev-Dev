@@ -1,0 +1,6 @@
+<div class="container" style="display: flex; flex-direction: column;">
+    <div style="text-align: center;">
+      <button [title]="category.name + 'details'" [routerLink]="['/categories', category.id]" 
+      *ngFor="let category of categories"> {{category.name}} </button>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+<div class="items">
+    <h3> 
+        <a [title]="product.name + ' details'" [routerLink]="['/categories', categoryId, 'products', product.id]">
+            <img [src]="product.landingImage">
+            {{ product.name }}
+        </a>
+        
+    </h3>
+    <h3> Rating: {{ product.rating }}</h3>
+    <p class="description" *ngIf="product.description"> Description: {{product.description}}</p>
+    <h2>{{ product.price }} тг.</h2>
+    
+    <button type="button" id="tgButton" (click)="shareTg(product.urlKaspi)"></button>
+    <button type="button" id="waButton" (click)="shareWa(product.urlKaspi)"></button>
+    <button type="button" id="rmButton" (click)="removeProduct()"></button>
+    <button type="button" id="lkButton" (click)="likeProduct()"></button>
+    <h2>Likes:{{ product.likes }}</h2>
+</div>
