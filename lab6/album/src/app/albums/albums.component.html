@@ -1,0 +1,15 @@
+<h1>Альбомы</h1>
+
+<form (submit)="onSubmit($event)">
+  <input type="file" (change)="onFileSelected($event)" accept="image/*">
+  <button type="submit">Загрузить фото</button>
+</form>
+
+<div *ngIf="photos.length > 0">
+  <h2>Загруженные фото:</h2>
+  <ul>
+    <li *ngFor="let photo of photos">
+      <img [src]="photo.url" alt="Photo">
+    </li>
+  </ul>
+</div>
