@@ -15,6 +15,7 @@ const routes: Routes = [
   { path: 'albums/:id/photos', component: AlbumPhotosComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, 
   { path: '**', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: '/albums', pathMatch: 'full' },
   {path: '**',redirectTo: '/'}
 ];
 

@@ -1,1 +1,11 @@
-<p>album-detail works!</p>
+<h2>Детали альбома</h2>
+<div *ngIf="album">
+  <p>ID: {{ album.id }}</p>
+  <p>Title: {{ album.title }}</p>
+</div>
+
+<h3>Фотографии альбома</h3>
+<div *ngFor="let photo of photos">
+  <img [src]="photo.url" [alt]="photo.title">
+</div>
+
